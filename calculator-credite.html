@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Banca Teaca</title>
+        <link rel="stylesheet" href="styles_cc.css">
+        <script src="components/header.js" type="text/javascript" defer></script>
+        <script src="components/footer.js" type="text/javascript" defer></script>
+        <script src="scripts/script-calculator-credite.js" defer></script>
+    </head>
+    <body>
+        <header-component></header-component>  
+        <main class = "main-page-content">
+            <h1>Formular Credite</h1>
+            <form action="" id="creditForm">
+                <label>Suma imprumutata 
+                    <input id="suma-imprumutata" type="number" placeholder="1000" min="1000" required /></input>
+                </label>
+                <label>Perioada de plata 
+                    <input id="perioada-plata" type="number" placeholder="luni" min="3" max="60" required /></input>
+                </label>
+                <input id="submit-credite" type="submit" value="Calculeaza" />
+            </form> 
+            <div id="rezultatCredite"></div> 
+        </main>  
+        <footer-component></footer-component>    
+    </body>
+</html>
